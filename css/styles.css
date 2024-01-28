@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    min-height: 300px;
+    width: max(1vw, 500px);
+    flex-wrap: wrap;
+    background-color: yellow;
+}
+
+.children {
+    flex: 1;
+    border: 1px black dashed;
+}
