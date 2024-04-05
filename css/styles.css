@@ -1,12 +1,32 @@
+body {
+    display: flex;
+    gap: 50px;
+}
+
 .container {
     display: flex;
+    gap: 5px;
     min-height: 300px;
-    width: max(1vw, 500px);
-    flex-wrap: wrap;
+    padding: 5px;
+    width: max(1vw, 500px); 
+
+    border: 1px solid black;
+}
+
+.container .children {
+    flex: 1;
+    border: 1px black dashed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.children.color {
     background-color: yellow;
 }
 
-.children {
-    flex: 1;
-    border: 1px black dashed;
+.children.dragging {
+    opacity:  0.5;
 }
+
